@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>百度一下，你就知道</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" media="screen and (min-width:601px)" href="css/baidu.css">
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="css/small.css" type="text/css" />
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/baidu.js"></script>
+    <!-- IE适配HTML5 -->
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="s-skin-container"></div>
+            <!-- 导航 -->
+            <header>
+                <div class="s-menu">
+                    <div class="s-weather-wrapper">
+                        <div class="city-weather">
+                            <span>南京：</span>
+                            <span class="weather-icon"></span>
+                            <span>23℃</span>
+                        </div>
+                        <div class="city-pollution">
+                            <span class="pollution-name">良</span>
+                            <span>52</span>
+                            <span class="show-vertical">|</span>
+                        </div>
+                    </div>
+                    <div class="s-icons">
+                        <a href="#" id="skin-change">换肤</a>
+                        <a href="#">消息</a>
+                    </div>
+                </div>
+                <nav id="nav">
+                    <a href="http://news.baidu.com/" class="bold">新闻</a>
+                    <a href="http://www.hao123.com/" class="bold">hao123</a>
+                    <a href="http://map.baidu.com/" class="bold">地图</a>
+                    <a href="http://v.baidu.com/" class="bold">视频</a>
+                    <a href="https://tieba.baidu.com/index.html" class="bold">贴吧</a>
+                    <a href="http://xueshu.baidu.com/" class="bold">学术</a>
+                    <a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F">登录</a>
+                    <div class="setting-menu">
+                        <a href="http://www.baidu.com/gaoji/preferences.html">设置</a>
+                        <!-- 设置下拉菜单 -->
+                        <div class="baidu-setting">
+                            <i class="setting-icon"></i>
+                            <a class="setpref">搜索设置</a>
+                            <a href="//www.baidu.com/gaoji/advanced.html" target="_blank">高级搜索</a>
+                            <a href="javascript:;">关闭预测</a>
+                            <a href="javascript:;">搜索历史</a>
+                        </div>
+                    </div>
+                    <a href="http://www.baidu.com/more/" class="more" id="hidemp">更多产品</a>
+                </nav>
+            </header>
+            <div class="s-skin-layer">
+                <div class="s-skin-header">
+                    <ul class="s-skin-nav">
+                        <li class="choose-nav">热门</li>
+                        <li>简约</li>
+                        <div class="s-skin-up skin-nav-right" id="skin-up">收起</div>
+                        <div class="skin-nav-right" id="skin-remove">不使用皮肤</div>
+                        
+                    </ul>
+                </div>
+                <div class="s-skin-photo-body">
+                    <div class="s-skin-img-content">
+                        <ul class="s-skin-content">
+                            <li class="skin-type-content show-skin-type-content">
+                                <ul class="skin-img-list">
+                                    <li class="skin-img-item page-0 pos-0 big-img-li nav-1000 choose-li" data-num="1000" data-sid="" data-index="883"><img class="skin-img-item-img" src="https://ss0.bdstatic.com/l4oZeXSm1A5BphGlnYG/skin_plus/883.jpg?2">
+                                        <div class="skin-img-shadow"></div>
+                                        <p class="skin-img-item-writer">摄影:剑灵</p>
+                                        <div class="skin-img-item-new skin-bg-icon"></div>
+                                        <div class="skin-img-item-choose skin-bg-icon skin-bg-png24-icon"></div>
+                                    </li>
+                                    <li class="skin-img-item page-0 pos-1 nav-1000" data-num="1000" data-sid="" data-index="882"><img class="skin-img-item-img" src="https://ss3.bdstatic.com/lPoZeXSm1A5BphGlnYG/skin_plus/882.jpg?2">
+                                        <div class="skin-img-shadow"></div>
+                                        <p class="skin-img-item-writer">摄影:白敬亭</p>
+                                        <div class="skin-img-item-new skin-bg-icon"></div>
+                                        <div class="skin-img-item-choose skin-bg-icon skin-bg-png24-icon"></div>
+                                    </li>
+                                    <li class="skin-img-item page-0 pos-2 nav-1000" data-num="1000" data-sid="" data-index="881"><img class="skin-img-item-img" src="https://ss2.bdstatic.com/kfoZeXSm1A5BphGlnYG/skin_plus/881.jpg?2">
+                                        <div class="skin-img-shadow"></div>
+                                        <p class="skin-img-item-writer">摄影:一品芝麻狐</p>
+                                        <div class="skin-img-item-new skin-bg-icon"></div>
+                                        <div class="skin-img-item-choose skin-bg-icon skin-bg-png24-icon"></div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="skin-type-content">
+                                <ul class="skin-img-list">
+                                    <li class="skin-img-item page-0 pos-0 big-img-li nav-1002" data-num="1002" data-sid="" data-index="12"><img class="skin-img-item-img" data-src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/skin_plus/12.jpg?2" src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/skin_plus/12.jpg?2">
+                                        <div class="skin-img-shadow"></div>
+                                        <p class="skin-img-item-writer">摄影:全景图片</p>
+                                        <div class="skin-img-item-new skin-bg-icon"></div>
+                                        <div class="skin-img-item-choose skin-bg-icon skin-bg-png24-icon"></div>
+                                    </li>
+                                    <li class="skin-img-item page-0 pos-1 nav-1002" data-num="1002" data-sid="" data-index="111"><img class="skin-img-item-img" data-src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/skin_plus/111.jpg?2" src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/skin_plus/111.jpg?2">
+                                        <div class="skin-img-shadow"></div>
+                                        <p class="skin-img-item-writer">摄影:全景图片</p>
+                                        <div class="skin-img-item-new skin-bg-icon"></div>
+                                        <div class="skin-img-item-choose skin-bg-icon skin-bg-png24-icon"></div>
+                                    </li>
+                                    <li class="skin-img-item page-0 pos-2 nav-1002" data-num="1002" data-sid="" data-index="114"><img class="skin-img-item-img" data-src="https://ss3.bdstatic.com/lPoZeXSm1A5BphGlnYG/skin_plus/114.jpg?2" src="https://ss3.bdstatic.com/lPoZeXSm1A5BphGlnYG/skin_plus/114.jpg?2">
+                                        <div class="skin-img-shadow"></div>
+                                        <p class="skin-img-item-writer">摄影:全景图片</p>
+                                        <div class="skin-img-item-new skin-bg-icon"></div>
+                                        <div class="skin-img-item-choose skin-bg-icon skin-bg-png24-icon"></div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 展开的更多产品 -->
+            <div class="moreproduct" id="moreproduct">
+                <div class="mptitle">更多产品</div>
+                <div class="mplink" id="mplink">
+                    <a href="http://www.nuomi.com/?cid=002540" name="tj_nuomi"><span class="bdbriimgitem_1"></span>糯米</a>
+                    <a href="http://music.baidu.com" name="tj_mp3"><span class="bdbriimgitem_3"></span>音乐</a>
+                    <a href="http://image.baidu.com" name="tj_img"><span class="bdbriimgitem_4"></span>图片</a>
+                    <a href="http://zhidao.baidu.com" name="tj_zhidao"><span class="bdbriimgitem_2"></span>知道</a>
+                    <a href="http://wenku.baidu.com" name="tj_wenku"><span class="bdbriimgitem_5"></span>文库</a>
+                    <a href="http://top.baidu.com" name="tj_bang"><span class="bdbriimgitem_6"></span>风云榜</a>
+                    <div class="mpevenmore"><a href="//www.baidu.com/more/" name="tj_more">全部产品&gt;&gt;</a></div>
+                </div>
+            </div>
+            <!-- 内容 -->
+            <div class="content">
+                <!-- 百度logo -->
+                <img class="baidulogo" src="https://www.baidu.com/img/bd_logo1.png" alt="百度一下" height="129" width="270">
+                <!-- 搜索框 -->
+                <form action="https://www.baidu.com/s" method="get" target="_blank">
+                    <input type="text" class="search-input" name="wd" autofocus><i class="soutu-btn"></i></input>
+                    <button type="submit" class="search-btn">百度一下</button>
+                </form>
+            </div>
+            <!-- 二维码 -->
+            <div class="qrcode-item">
+                <div class="qrcode-img"></div>
+                <p class="qrcode-text"><b>手机百度</b></p>
+            </div>
+            <!-- 登陆后 主内容 -->
+            <div class="s-main">
+                <div class="s-main-menu">
+                    <ul>
+                        <li class="tabin"><span>我的关注</span></li>
+                        <li class="tab"><span>推荐</span></li>
+                        <li class="tab"><span>导航</span></li>
+                    </ul>
+                </div>
+                <div class="s-main-content">
+                    <div class="s-main-mine s-main-item content-show">
+                        <div class="mine-nav-wrapper">
+                            <div class="nav-title-content" id="mine-nav">
+                                <i></i>
+                                <span class="mine-title-text">我的导航</span>
+                                <span class="mine-title-num">(3)</span>
+                            </div>
+                            <div class="mine-nav-content" id="mine-nav-content">
+                                <div class="mine-nav-item">
+                                    <img src="https://ss0.bdstatic.com/l4oZeXSm1A5BphGlnYG/icon/2556.png?3" alt="通化一中吧" height="16" width="16" class="nav-icon">
+                                    <span>西交利物浦吧</span>
+                                </div>
+                                <div class="mine-nav-item">
+                                    <img src="https://ss0.bdstatic.com/l4oZeXSm1A5BphGlnYG/icon/2556.png?3" alt="通化一中吧" height="16" width="16" class="nav-icon">
+                                    <span>火影忍者吧</span>
+                                </div>
+                                <div class="mine-nav-item">
+                                    <img src="https://ss0.bdstatic.com/l4oZeXSm1A5BphGlnYG/icon/2556.png?3" alt="通化一中吧" height="16" width="16" class="nav-icon">
+                                    <span>动漫歌曲吧</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="manager-item">
+                            <div class="manager-btn">
+                                <span class="manager-btn-icon"></span>
+                                <span class="manager-btn-text">自定义</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s-main-hot s-main-item">
+                        <div class="hot-news-left">
+                            <div class="news-tips">
+                                <div class="tips-content">
+                                    <i class="tip-icon"></i>
+                                    <span>以下信息根据您的兴趣推荐</span>
+                                </div>
+                            </div>
+                            <div class="news-list-wrapper">
+                                <div class="news-list-item">
+                                    <div class="news-img">
+                                        <img class="s-news-img" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3938885511,785092891&amp;fm=173&amp;s=67BB1FC704E14EBCDEB1ECF703004011&amp;w=218&amp;h=146&amp;img.JPEG" height="119" width="179">
+                                    </div>
+                                    <div class="news-info">
+                                        <div class="news-title-left">
+                                            <a>被粉丝吐槽胸小 周冬雨：我的胸跟身材是匹配</a>
+                                        </div>
+                                        <div class="news-from">手机搜狐网 09-04 08:34</div>
+                                    </div>
+                                </div>
+                                <div class="news-list-item">
+                                    <div class="news-img">
+                                        <img class="s-news-img" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3938885511,785092891&amp;fm=173&amp;s=67BB1FC704E14EBCDEB1ECF703004011&amp;w=218&amp;h=146&amp;img.JPEG" height="119" width="179">
+                                    </div>
+                                    <div class="news-info">
+                                        <div class="news-title-left">
+                                            <a>被粉丝吐槽胸小 周冬雨：我的胸跟身材是匹配</a>
+                                        </div>
+                                        <div class="news-from">手机搜狐网 09-04 08:34</div>
+                                    </div>
+                                </div>
+                                <div class="news-list-item">
+                                    <div class="news-img">
+                                        <img class="s-news-img" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3938885511,785092891&amp;fm=173&amp;s=67BB1FC704E14EBCDEB1ECF703004011&amp;w=218&amp;h=146&amp;img.JPEG" height="119" width="179">
+                                    </div>
+                                    <div class="news-info">
+                                        <div class="news-title-left">
+                                            <a>被粉丝吐槽胸小 周冬雨：我的胸跟身材是匹配</a>
+                                        </div>
+                                        <div class="news-from">手机搜狐网 09-04 08:34</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hot-news-rignt">
+                            <div class="s-rank-title">
+                                实时热点
+                            </div>
+                            <ul class="s-news-rank-content">
+                                <li class="news-meta-item news-artist" data-index="0"><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=3%E7%BE%8E%E5%9B%BD%E4%BA%BA%E4%BC%8A%E6%9C%97%E5%88%A4%E5%88%91&amp;rsv_idx=2" target="_blank">3美国人伊朗判刑</a><span class="new-identity"></span></span>
+                                    </span>
+                                </li>
+                                <li class="news-meta-item news-artist" data-index="1"><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E6%B2%88%E9%98%B3%E7%8E%B0%E5%85%B1%E4%BA%AB%E6%9C%8D%E8%A3%85&amp;rsv_idx=2" target="_blank">沈阳现共享服装</a><span class="new-identity"></span></span>
+                                    </span>
+                                </li>
+                                <li class="news-meta-item news-artist" data-index="2"><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E5%B8%8C%E5%B0%94%E9%A1%BF%E9%85%92%E5%BA%97%E5%B0%86%E6%92%A4%E7%89%8C&amp;rsv_idx=2" target="_blank">希尔顿酒店将撤牌</a><span class="new-identity"></span></span>
+                                    </span>
+                                </li>
+                                <li class="news-meta-item news-artist" data-index="3"><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E7%81%AB%E9%94%85%E5%90%83%E6%B8%85%E6%B1%A4%E9%81%AD%E5%AB%8C%E5%BC%83&amp;rsv_idx=2" target="_blank">火锅吃清汤遭嫌弃</a><span class="new-identity"></span></span>
+                                    </span>
+                                </li>
+                                <li class="news-meta-item news-artist" data-index="4"><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=12%E8%BE%86%E8%BD%A6%E9%9B%86%E4%BD%93%E9%80%86%E8%A1%8C&amp;rsv_idx=2" target="_blank">12辆车集体逆行</a><span class="new-identity"></span></span>
+                                    </span>
+                                </li>
+                                <li class="news-meta-item" data-index="5"><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=29.6%E4%B8%87%E4%B9%B0%E4%BA%8B%E6%95%85%E8%BD%A6&amp;rsv_idx=2" target="_blank">29.6万买事故车</a><span class="new-identity"></span></span>
+                                    </span>
+                                </li>
+                                <li class="news-meta-item" data-index="6"><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E5%8D%96%E7%83%A7%E9%A5%BC%E6%94%92%E4%B8%8B7%E5%A5%97%E6%88%BF&amp;rsv_idx=2" target="_blank">卖烧饼攒下7套房</a><span class="new-identity"></span></span>
+                                    </span>
+                                </li>
+                                <li class="news-meta-item" data-index="7"><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E5%86%92%E5%85%85%E9%AB%98%E5%AF%8C%E5%B8%85%E9%AA%97%E5%9B%9B%E5%A5%B3&amp;rsv_idx=2" target="_blank">冒充高富帅骗四女</a><span class="new-identity"></span></span>
+                                    </span>
+                                </li>
+                                <li class="news-meta-item" data-index="8"><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E5%8F%8C%E5%AE%8B%E5%A9%9A%E8%AE%AF%E5%90%8E%E9%A6%96%E5%90%8C%E6%A1%86&amp;rsv_idx=2" target="_blank">双宋婚讯后首同框</a><span class="new-identity"></span></span>
+                                    </span>
+                                </li>
+                                <li class="news-meta-item" data-index="9"><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E5%A4%A7%E4%BC%97%E6%B1%BD%E8%BD%A6%E5%B0%86%E8%A2%AB%E5%8F%AC%E5%9B%9E&amp;rsv_idx=2" target="_blank">大众汽车将被召回</a><span class="new-identity"></span></span>
+                                    </span>
+                                </li>
+                                <li class="news-meta-item" data-index="10"><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E5%8D%8E%E8%A3%94%E5%A5%B3%E6%BC%94%E5%91%98%E6%94%B9%E5%A7%93%E6%B0%8F&amp;rsv_idx=2" target="_blank">华裔女演员改姓氏</a><span class="new-identity"></span></span>
+                                    </span>
+                                </li>
+                                <li class="news-meta-item" data-index="11"><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E5%86%9C%E6%B0%91%E5%9D%90%E6%B0%94%E7%90%83%E8%A2%AB%E5%90%B9%E8%B5%B0&amp;rsv_idx=2" target="_blank">农民坐气球被吹走</a><span class="new-identity"></span></span>
+                                    </span>
+                                </li>
+                                <li class="news-meta-item" data-index="12"><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E5%A5%B3%E5%AD%90%E6%8A%A5%E5%A4%8D%E7%A0%8D%E9%94%99%E4%BA%BA&amp;rsv_idx=2" target="_blank">女子报复砍错人</a><span class="new-identity"></span></span>
+                                    </span>
+                                </li>
+                                <li class="news-meta-item" data-index="13"><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E6%9D%8E%E5%88%9A%E6%B6%89%E5%AB%8C%E4%B8%A5%E9%87%8D%E8%BF%9D%E7%BA%AA&amp;rsv_idx=2" target="_blank">李刚涉嫌严重违纪</a><span class="new-identity"></span></span>
+                                    </span>
+                                </li>
+                                <li class="news-meta-item" data-index="14"><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E4%B8%AD%E5%9B%BD%E5%8F%91%E7%8E%B0%E8%B6%85%E7%BA%A7%E9%87%91%E5%B1%9E&amp;rsv_idx=2" target="_blank">中国发现超级金属</a><span class="new-identity"></span></span>
+                                    </span>
+                                </li>
+                                <li class="news-meta-item" data-index="15"><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E7%BD%91%E7%BA%A2%E6%99%92%E7%8E%8B%E4%BF%8A%E5%87%AF%E5%AF%9D%E5%AE%A4&amp;rsv_idx=2" target="_blank">网红晒王俊凯寝室</a><span class="new-identity"></span></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="s-main-nav s-main-item">
+                        <div class="s-nav-wrapper s-nav-personal">
+                            <div class="s-nav-area">
+                                <div class="clearfix" data-dir="personal">
+                                    <h1>猜你喜欢</h1>
+                                    <div class="nav-item" data-rid="5991794" data-log="stype:-1;pos:0;dir:personal;ncols:6;" data-extra="-1"><a href="http://www.nuomi.com/?vip_frm=super_nav_vip" title="百度糯米" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="0"><img src="https://ss3.bdstatic.com/lPoZeXSm1A5BphGlnYG/icon/9483.png?1"><span class="nav-txt">百度糯米</span></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="3825400" data-log="stype:-1;pos:1;dir:personal;ncols:6;" data-extra="-1"><a href="http://www.jd.com/?vip_frm=super_nav_vip" title="京东商城" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="1"><img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/95541.png"><span class="nav-txt">京东商城</span></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="17914961" data-log="stype:-1;pos:2;dir:personal;ncols:6;" data-extra="-1"><a href="http://www.yhd.com/?vip_frm=super_nav_vip" title="1号店" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="2"><img src="https://ss0.bdstatic.com/l4oZeXSm1A5BphGlnYG/icon/95780.png"><span class="nav-txt">1号店</span></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="3172955" data-log="stype:-1;pos:3;dir:personal;ncols:6;" data-extra="-1"><a href="http://www.suning.com/?vip_frm=super_nav_vip" title="苏宁易购" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="3"><img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/95537.png?99"><span class="nav-txt">苏宁易购</span></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="10563402" data-log="stype:-1;pos:4;dir:personal;ncols:6;" data-extra="-1"><a href="http://www.vip.com/?vip_frm=super_nav_vip" title="唯品会" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="4"><img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/95693.png"><span class="nav-txt">唯品会</span></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="7304613" data-log="stype:-1;pos:5;dir:personal;ncols:6;" data-extra="-1"><a href="http://www.dangdang.com/?vip_frm=super_nav_vip" title="当当网" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="5"><img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/95517.png"><span class="nav-txt">当当网</span></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="3229106195213330068" data-log="stype:0;pos:6;dir:personal;ncols:6;" data-extra="0"><a href="http://www.taobao.com/" title="淘宝网" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="6"><img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/95487.png"><span class="nav-txt">淘宝网</span></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="740814748134476534" data-log="stype:0;pos:7;dir:personal;ncols:6;" data-extra="0"><a href="https://wx.qq.com/" title="微信" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="7"><img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/95753.png"><span class="nav-txt">微信</span></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="3878392750422225505" data-log="stype:0;pos:8;dir:personal;ncols:6;" data-extra="0"><a href="http://www.douyutv.com/" title="斗鱼" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="8"><img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/200001.png"><span class="nav-txt">斗鱼</span></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="740893901218991176" data-log="stype:0;pos:9;dir:personal;ncols:6;" data-extra="0"><a href="http://www.qq.com/" title="腾讯" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="9"><img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/95511.png"><span class="nav-txt">腾讯</span></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="2265095729623294092" data-log="stype:0;pos:10;dir:personal;ncols:6;" data-extra="0"><a href="http://www.iqiyi.com/" title="爱奇艺" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="10"><img src="https://ss2.bdstatic.com/lfoZeXSm1A5BphGlnYG/icon/95502.png"><span class="nav-txt">爱奇艺</span></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="955238831062113963" data-log="stype:0;pos:11;dir:personal;ncols:6;" data-extra="0"><a href="http://www.12306.cn/" title="铁路客户服务中心" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="11"><img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/81407.png"><span class="nav-txt">铁路客户服务中心</span></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="2243260743153691622" data-log="stype:0;pos:12;dir:personal;ncols:6;" data-extra="0"><a href="http://www.youku.com/" title="优酷网" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="12"><img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/95489.png"><span class="nav-txt">优酷网</span></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="1023897782664726362" data-log="stype:0;pos:13;dir:personal;ncols:6;" data-extra="0"><a href="http://www.163.com/" title="网易" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="13"><img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/95504.png"><span class="nav-txt">网易</span></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="690226200992830435" data-log="stype:0;pos:14;dir:personal;ncols:6;" data-extra="0"><a href="http://www.58.com/" title="58同城" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="14"><img src="https://ss2.bdstatic.com/lfoZeXSm1A5BphGlnYG/icon/95510.png"><span class="nav-txt">58同城</span></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="406198459574582133" data-log="stype:0;pos:15;dir:personal;ncols:6;" data-extra="0"><a href="http://weibo.com/" title="新浪微博" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="15"><img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/95488.png"><span class="nav-txt">新浪微博</span></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="3248765888193020759" data-log="stype:0;pos:16;dir:personal;ncols:6;" data-extra="0"><a href="http://www.alipay.com/" title="支付宝" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="16"><img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/7591.png"><span class="nav-txt">支付宝</span></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="1073401009586409913" data-log="stype:0;pos:17;dir:personal;ncols:6;" data-extra="0"><a href="http://www.4399.com/" title="4399小游戏" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="17"><img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/95497.png"><span class="nav-txt">4399小游戏</span></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="9.6258128834561E+18" data-log="stype:0;pos:18;dir:personal;ncols:6;" data-extra="0"><a href="http://www.autohome.com.cn/" title="汽车之家" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="18"><img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/95512.png"><span class="nav-txt">汽车之家</span></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="6712754894264046115" data-log="stype:0;pos:19;dir:personal;ncols:6;" data-extra="0"><a href="http://www.bilibili.com/" title="哔哩哔哩" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="19"><img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/6000.png?3"><span class="nav-txt">哔哩哔哩</span></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="2211103210330523002" data-log="stype:0;pos:20;dir:personal;ncols:6;" data-extra="0"><a href="http://www.qunar.com/" title="去哪儿" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="20"><img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/95529.png"><span class="nav-txt">去哪儿</span></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="1275804339307002848" data-log="stype:0;pos:21;dir:personal;ncols:6;" data-extra="0"><a href="http://www.letv.com/" title="乐视网" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="21"><img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/95533.png"><span class="nav-txt">乐视网</span></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="42054184" data-log="stype:-1;pos:22;dir:personal;ncols:6;" data-extra="-1"><a href="https://www.microsoft.com/zh-cn/store/apps/windows/" title="微软商店" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="22"><img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/9321.png"><span class="nav-txt">微软商店</span></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-nav-wrapper">
+                            <div class="s-nav-area">
+                                <div class="clearfix" data-dir="news">
+                                    <h1>资讯信息</h1>
+                                    <div class="nav-item" data-rid="10972926" data-log="stype:;pos:0;dir:news;ncols:6;" data-extra=""><a href="http://www.qq.com/" title="腾讯网" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="0"><img height="70" width="115" src="https://ss3.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/8694a4c27d1ed21b6ccc7ceea76eddc451da3fb7.jpg"></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="9648274" data-log="stype:;pos:1;dir:news;ncols:6;" data-extra=""><a href="http://www.sina.com.cn/" title="新浪网" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="1"><img height="70" width="115" src="https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/574e9258d109b3dea9e8b663c6bf6c81800a4c61.jpg"></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="3837561" data-log="stype:;pos:2;dir:news;ncols:6;" data-extra=""><a href="http://www.weibo.com/" title="微博" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="2"><img height="70" width="115" src="https://ss3.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/fd039245d688d43fd9f3c3f9771ed21b0ef43b66.jpg"></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="5080232" data-log="stype:;pos:3;dir:news;ncols:6;" data-extra=""><a href="http://www.sohu.com/" title="搜狐网" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="3"><img height="70" width="115" src="https://ss3.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/1c950a7b02087bf4b87605e2f8d3572c11dfcf27.jpg"></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="9456775" data-log="stype:;pos:4;dir:news;ncols:6;" data-extra=""><a href="http://www.163.com/" title="网易" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="4"><img height="70" width="115" src="https://ss1.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/d53f8794a4c27d1eb3bf69cf11d5ad6eddc4381b.jpg"></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="5737382" data-log="stype:;pos:5;dir:news;ncols:6;" data-extra=""><a href="http://www.gmw.cn/" title="光明网" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="5"><img height="70" width="115" src="https://ss1.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/super/pic/item/4afbfbedab64034ffc54900da5c379310a551d1b.jpg"></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="11039865" data-log="stype:;pos:6;dir:news;ncols:6;" data-extra=""><a href="http://www.cntv.cn/" title="央视网" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="6"><img height="70" width="115" src="https://ss3.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/7a899e510fb30f2434cdbe08c295d143ad4b0361.jpg"></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="5987717" data-log="stype:;pos:7;dir:news;ncols:6;" data-extra=""><a href="http://www.people.com.cn/" title="人民网" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="7"><img height="70" width="115" src="https://ss1.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/2cf5e0fe9925bc31755b539354df8db1cb1370b2.jpg"></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="6473932" data-log="stype:;pos:8;dir:news;ncols:6;" data-extra=""><a href="http://www.china.com.cn/" title="中国网" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="8"><img height="70" width="115" src="https://ss1.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/super/pic/item/b21c8701a18b87d6832bf9140d0828381f30fd54.jpg"></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="6058110" data-log="stype:;pos:9;dir:news;ncols:6;" data-extra=""><a href="http://www.chinadaily.com.cn/" title="中国日报" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="9"><img height="70" width="115" src="https://ss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/super/pic/item/b64543a98226cffc912cedb9b3014a90f603eab3.jpg"></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="2583028" data-log="stype:;pos:10;dir:news;ncols:6;" data-extra=""><a href="http://www.ifeng.com/" title="凤凰网" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="10"><img height="70" width="115" src="https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/caef76094b36acaf2bb6c4f776d98d1001e99c62.jpg"></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="6659688" data-log="stype:;pos:11;dir:news;ncols:6;" data-extra=""><a href="http://www.xinhuanet.com/" title="新华网" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="11"><img height="70" width="115" src="https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/super/pic/item/3b292df5e0fe992594643b5b3ea85edf8db17154.jpg"></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="1687683" data-log="stype:;pos:12;dir:news;ncols:6;" data-extra=""><a href="http://www.zol.com.cn/" title="中关村在线" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="12"><img height="70" width="115" src="https://ss1.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/super/pic/item/279759ee3d6d55fb7653242d67224f4a20a4dd20.jpg"></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="12123518" data-log="stype:;pos:13;dir:news;ncols:6;" data-extra=""><a href="http://www.hupu.com/" title="虎扑体育" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="13"><img height="70" width="115" src="https://ss3.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/50da81cb39dbb6fd3833b72d0324ab18972b3754.jpg"></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="3403264" data-log="stype:;pos:14;dir:news;ncols:6;" data-extra=""><a href="http://www.autohome.com.cn/" title="汽车之家" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="14"><img height="70" width="115" src="https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/d043ad4bd11373f0ff573d94ae0f4bfbfbed0454.jpg"></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                    <div class="nav-item" data-rid="9567516" data-log="stype:;pos:15;dir:news;ncols:6;" data-extra=""><a href="http://www.xueqiu.com/" title="雪球" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="15"><img height="70" width="115" src="https://ss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/super/pic/item/a8014c086e061d95a510653371f40ad162d9ca63.jpg"></a>
+                                        <div class="top-line"></div>
+                                        <div class="fanli-tag"><a href="" target="_blank"></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s-more-bar">
+                        <div class="animate-arrow" id="animate-arrow"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 回到顶部 -->
+            <div class="to-top" id="to-top">
+                <span class="to-top-text">回到顶部</span>
+                <span class="to-top-icon"></span>
+            </div>
+            <!-- footer -->
+            <footer class="ftcon">
+                <p class="h">
+                    <a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为主页</a>
+                    <a href="http://home.baidu.com/">关于百度</a>
+                    <a href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-irhome">About Baidu</a>
+                    <a href="http://e.baidu.com/?refer=888">百度推广</a>
+                </p>
+                <p class="cp">
+                    <span>&copy;2017&nbsp;Baidu</span>&nbsp;
+                    <a href="https://www.baidu.com/duty/">使用百度前必读</a>&nbsp;
+                    <a href="http://help.baidu.com/">意见反馈</a>&nbsp;
+                    <span>京ICP证030173号 </span>
+                    <i class="c-icon-icrlogo"></i>&nbsp;
+                    <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">京公网安备11000002000001号</a>
+                    <i class="c-icon-jgwablogo"></i>
+                </p>
+            </footer>
+        
+    </div>
+    <div class="mobile-wrapper">
+        <div class="mobile-header">
+            <div class="weather">
+                <i class="icon iconfont">&#xf0030;</i>
+                <div class="weather-num">32°</div>
+                <div class="weather-status">
+                    <p>南京</p>
+                    <p>32&nbsp;优</p>
+                </div>
+                <i class="iconfont icon-down">&#xe60b;</i>
+            </div>
+            <div class="login">
+                <a id="login" class="icon-login" href="https://m.baidu.com/usrprofile?action=home&amp;model=user&amp;ori=index"></a>
+            </div>
+        </div>
+        <div class="mobile-content">
+            <div class="logo">
+                <!-- 百度logo -->
+                <img src="https://m.baidu.com/static/index/plus/plus_logo.png" alt="百度一下">
+            </div>
+            <!-- 搜索框 -->
+            <form action="https://www.baidu.com/s" method="get" target="_blank">
+                <input type="text" class="search-input" name="wd" autofocus></input>
+                <button type="submit" class="search-btn">百度一下<i class="call-icon"></i></button>
+            </form>
+            <!-- 图标 -->
+            <div class="icons">
+                <a href="" class="ns-item"><i class="ns-focus ns-icon"></i><span class="ns-text">关注</span></a>
+                <a href="" class="ns-item"><i class="ns-news ns-icon"></i><span class="ns-text">新闻</span></a>
+                <a href="" class="ns-item"><i class="ns-novel ns-icon"></i><span class="ns-text">小说</span></a>
+                <a href="" class="ns-item"><i class="ns-video ns-icon"></i><span class="ns-text">视频</span></a>
+                <a href="" class="ns-item"><i class="ns-life ns-icon"></i><span class="ns-text">糯米</span></a>
+                <a href="" class="ns-item"><i class="ns-map ns-icon"></i><span class="ns-text">地图</span></a>
+            </div>
+            <ul class="ns-swipe-menu">
+                <li class="ns-swipe-tab ns-swipe-tab-active"></li>
+                <li class="ns-swipe-tab"></li>
+            </ul>
+        </div>
+        <!-- 新闻 -->
+        <div class="news-container">
+            <a href="https://feed.baidu.com/feed/data/wise/imageland?s_type=picnews&nid=9617873707955846197&n_type=1&p_from=2">
+                <div class="news-h2">49岁翁虹和47岁王琳出席活动，注意力放在翁虹的手上，什么东西那么大</div>
+                <div class="news-content">
+                    <img src="https://timgmb03.bdimg.com/timg?searchbox_feed&amp;quality=120&amp;wh_rate=0&amp;size=f648_364&amp;ref=http%3A%2F%2Fwww.baidu.com&amp;sec=0&amp;di=26952775b56f4ae8072c8ab5c3e61fcb&amp;src=http%3A%2F%2Ft10.baidu.com%2Fit%2Fu%3D522717918%2C450487883%26fm%3D175%26s%3DEF301BC7D40391052780B1080300B011%26w%3D478%26h%3D269%26img.JPEG">
+                </div>
+            </a>
+            <a href="https://feed.baidu.com/feed/data/wise/imageland?s_type=picnews&nid=10178159342836336146&n_type=1&p_from=2">
+                <div class="news-h2">汽车里有个不起眼的小孔，时刻要记得勤检查，疏忽了，没准要命！</div>
+                <div class="news-content">
+                    <img src="https://timgmb04.bdimg.com/timg?searchbox_feed&amp;quality=120&amp;wh_rate=0&amp;size=f648_364&amp;ref=http%3A%2F%2Fwww.baidu.com&amp;sec=0&amp;di=4da20a1950d2dc82d08141c978f2d81e&amp;src=http%3A%2F%2Ft11.baidu.com%2Fit%2Fu%3D3777095668%2C2206173841%26fm%3D175%26s%3D2A829C454C00C7591881353D03008041%26w%3D469%26h%3D263%26img.JPEG">
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
